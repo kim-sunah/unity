@@ -1,0 +1,8 @@
+*.extension filter=lfs diff=lfs merge=lfs -text
+My[[:space:]]project/Library/PackageCache/com.unity.burst@1.8.7/.Runtime/libburst-llvm-15.dylib filter=lfs diff=lfs merge=lfs -text
+My/[[:space:]]project/Library/PackageCache/com.unity.burst@1.8.7/.Runtime/libburst-llvm-15.dylib filter=lfs diff=lfs merge=lfs -text
+libburst-llvm-15.dylib filter=lfs diff=lfs merge=lfs -text
+track filter=lfs diff=lfs merge=lfs -text
+*.dylib filter=lfs diff=lfs merge=lfs -text
+git filter=lfs diff=lfs merge=lfs -text
+lfs filter=lfs diff=lfs merge=lfs -text
