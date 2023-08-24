@@ -13,7 +13,7 @@ public class rain : MonoBehaviour
     void Start()
     {
         float x = Random.Range(-2.7f, 2.7f);
-        float y = Random.Range(-3f, 5f);
+        float y = Random.Range(4f, 5f);
         transform.position = new Vector3(x, y, 0);
 
         type = Random.Range(1, 4);
@@ -45,11 +45,17 @@ public class rain : MonoBehaviour
     {
         
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D coll)
     {
-        if(collision.gameObject.tag == "ground")
+        if (coll.gameObject.tag == "ground")
         {
+            Destroy(gameObject);
+        }
+
+        if (coll.gameObject.tag == "rtan")
+        {
+            GameManager.I.addScore(score);
+            Debug.Log("르탄이가 맞았단" + score);
             Destroy(gameObject);
         }
     }
