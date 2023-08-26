@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public GameObject rain;
     int totalScore =0;
     public Text scoreText;
-    float limit = 1f;
+    float limit = 30f;
     public Text timeText;
     public GameObject panel;
 
@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
     void initGame()
     {
         Time.timeScale = 1.0f;
-        limit = 1f;
+        limit = 30f;
         totalScore = 0;
 
     }
