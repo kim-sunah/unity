@@ -20,4 +20,12 @@ public class w1uq43 : MonoBehaviour
     {
         
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "balloon")
+        {
+            gameManager.I.gameOver();
+        }
+    }
 }
