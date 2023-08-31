@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class gameManager : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class gameManager : MonoBehaviour
     public Text thisScoreTxt;
     bool isRunning = true;
 
+    public void retry()
+    {
+        SceneManager.LoadScene("MainSecene");
+    }
 
     public void gameOver()
     {
@@ -30,6 +35,7 @@ public class gameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1f;
         InvokeRepeating("makeSquare", 0.0f, 0.5f);
 
 
