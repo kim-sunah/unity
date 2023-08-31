@@ -378,8 +378,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b923169ba6f1b4f9aa5c5505c2c7ae07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  square: {fileID: 0}
-  timeTxt: {fileID: 0}
+  square: {fileID: 1890167552}
+  timeTxt: {fileID: 1220947601}
 --- !u!4 &50967120
 Transform:
   m_ObjectHideFlags: 0
