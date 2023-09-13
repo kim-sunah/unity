@@ -13,6 +13,7 @@ public class gameManager : MonoBehaviour
     public GameObject endPanel;
     public Text thisScoreTxt;
     bool isRunning = true;
+    public Text maxScoreTxt;
 
     public void retry()
     {
@@ -25,6 +26,20 @@ public class gameManager : MonoBehaviour
         Time.timeScale = 0.0f;
         endPanel.SetActive(true);
         thisScoreTxt.text = alive.ToString("N2");
+        if(PlayerPrefs.HasKey("bastscore") == false)
+        {
+            PlayerPrefs.SetFloat("bastscore", alive);
+        }
+        else
+        {
+            if(alive > PlayerPrefs.GetFloat("bastscore"))
+            {
+                PlayerPrefs.SetFloat("bastscore", alive);
+            }
+        }
+        float maxScore = PlayerPrefs.GetFloat("bastscore");
+        maxScoreTxt.text = maxScore.ToString("N2");
+
     }
 
     private void Awake()
@@ -56,3 +71,7 @@ public class gameManager : MonoBehaviour
         Instantiate(square);
     }
 }
+
+//PlayerPrefs.SetInt('age', 10);
+//PlayerPrefs.SetString('name', 'donghyn lee');
+//PlayerPrefs.GetString('name');
