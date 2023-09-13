@@ -382,6 +382,7 @@ MonoBehaviour:
   timeTxt: {fileID: 1220947601}
   endPanel: {fileID: 1491670280}
   thisScoreTxt: {fileID: 916303644}
+  anim: {fileID: 18989772}
   maxScoreTxt: {fileID: 2078532312}
 --- !u!4 &50967120
 Transform:
