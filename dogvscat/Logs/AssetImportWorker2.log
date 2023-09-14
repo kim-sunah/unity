@@ -2566,3 +2566,137 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1051.182695 seconds.
+  path: Assets/Images/normaCat_full.png
+  artifactKey: Guid(ab417309b8b534254aa4d25be5470f3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/normaCat_full.png using Guid(ab417309b8b534254aa4d25be5470f3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64cd24ac3477629fb851e9c4aa1be55a') in 0.039811 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 449.814376 seconds.
+  path: Assets/Animations
+  artifactKey: Guid(7dadef32009b14e01b05a1bd5bca3fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations using Guid(7dadef32009b14e01b05a1bd5bca3fb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7210e5b9aaa5e169b4ab8e836c0b83ca') in 0.000475 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 24.923083 seconds.
+  path: Assets/Animations/nomalCat.anim
+  artifactKey: Guid(93a65d4ec3da94e7983ca433d311c6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/nomalCat.anim using Guid(93a65d4ec3da94e7983ca433d311c6f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62615cadc98bb8d946f139ecee72bc7e') in 0.001212 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 94.059516 seconds.
+  path: Assets/Images/normaCat_1.png
+  artifactKey: Guid(92f961476eb3740168e8a2662742a392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/normaCat_1.png using Guid(92f961476eb3740168e8a2662742a392) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98456b2dc604d479ce624c090fe2a971') in 0.006529 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 25.217077 seconds.
+  path: Assets/Images/normaCat_2.png
+  artifactKey: Guid(b3f9466d34ae14ccd872851253c54fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/normaCat_2.png using Guid(b3f9466d34ae14ccd872851253c54fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c3c7a034a9d22d82c29ea56331fb139') in 0.005237 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x17f487000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/suna/Develop/unity/dogvscat/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/suna/Develop/unity/dogvscat/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.227 seconds
+Refreshing native plugins compatible for Editor in 1.08 ms, found 3 plugins.
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.639 seconds
+Domain Reload Profiling: 866ms
+	BeginReloadAssembly (82ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (11ms)
+	LoadAllAssembliesAndSetupDomain (107ms)
+		LoadAssemblies (127ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (9ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (639ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (167ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (31ms)
+			ProcessInitializeOnLoadAttributes (107ms)
+			ProcessInitializeOnLoadMethodAttributes (15ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 1.10 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3997 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (176.9 KB). Loaded Objects now: 4618.
+Memory consumption went from 328.8 MB to 328.6 MB.
+Total: 2.447125 ms (FindLiveObjects: 0.149750 ms CreateObjectMapping: 0.070417 ms MarkObjects: 2.106083 ms  DeleteObjects: 0.120458 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 176.454922 seconds.
+  path: Assets/Animations/fatCat.anim
+  artifactKey: Guid(a137448632b024739a09a1fd86a0bfb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/fatCat.anim using Guid(a137448632b024739a09a1fd86a0bfb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58470151a510e4242731687c4126a2dd') in 0.007156 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 134.363346 seconds.
+  path: Assets/prefabs/nomalCat.prefab
+  artifactKey: Guid(c58a1bf5ac81a4e358e7b4d6a8a13cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/nomalCat.prefab using Guid(c58a1bf5ac81a4e358e7b4d6a8a13cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1462f8054744b423f8127e49d0f7fbd3') in 0.037297 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
+========================================================================
+Received Import Request.
+  Time since last request: 4.271918 seconds.
+  path: Assets/prefabs/fatCat.prefab
+  artifactKey: Guid(14a7e6f1273f2446aaa0f07b89fdcd64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/prefabs/fatCat.prefab using Guid(14a7e6f1273f2446aaa0f07b89fdcd64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ee587cd362f376906d8086f38ed4eb4') in 0.009031 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 34
