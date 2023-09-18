@@ -21,6 +21,10 @@ public class cat : MonoBehaviour
         {
             full = 10f;
         }
+        if (type == 2)
+        {
+            full = 20f;
+        }
         transform.position = new Vector3(x, y, 0);
     }
 
@@ -34,10 +38,14 @@ public class cat : MonoBehaviour
                 transform.position += new Vector3(0, -0.03f, 0);
             }else if(type == 1)
             {
+                transform.position += new Vector3(0, -0.02f, 0);
+            }
+            else if (type == 2)
+            {
                 transform.position += new Vector3(0, -0.05f, 0);
             }
 
-            
+
 
             if (transform.position.y < -16.0f)
             {
