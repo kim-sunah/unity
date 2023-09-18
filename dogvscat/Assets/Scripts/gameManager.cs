@@ -8,13 +8,15 @@ public class gameManager : MonoBehaviour
 
     public GameObject dog;
     public GameObject food;
-    public GameObject nomalCat;
+    public GameObject normalCat;
+    public GameObject fatCat;
     public static gameManager I;
     public GameObject retryBtn;
     int level = 0;
     int cat = 0;
     public Text levelText;
     public GameObject levelFront;
+    public GameObject pirateCat;
 
     // Start is called before the first frame update
     //싱글톤화
@@ -26,7 +28,8 @@ public class gameManager : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("makeFood", 0.0f, 0.02f);
+        Time.timeScale = 1.0f;
+        InvokeRepeating("makeFood", 0.0f, 0.1f);
         InvokeRepeating("makeCat", 0.0f, 1.0f);
     }
 
@@ -43,16 +46,43 @@ public class gameManager : MonoBehaviour
     }
     void makeCat()
     {
-        Instantiate(nomalCat);
+        Instantiate(normalCat);
+        if (level == 1)
+        {
+            float p = Random.Range(0, 10);
+            if (p < 2) Instantiate(normalCat);
+        }
+        else if (level == 2)
+        {
+            float p = Random.Range(0, 10);
+            if (p < 5) Instantiate(normalCat);
+        }
+        else if (level >= 3)
+        {
+            float p = Random.Range(0, 10);
+            if (p < 5) Instantiate(normalCat);
+
+            Instantiate(fatCat);
+        }
+        else if(level >= 5)
+        {
+            float p = Random.Range(0, 10);
+            if (p < 5) Instantiate(normalCat);
+            Instantiate(fatCat);
+            Instantiate(pirateCat);
+        }
     }
 
-    public void gameOber()
+    public void gameOver()
     {
         retryBtn.SetActive(true);
         Time.timeScale = 0;
     }
+
     public void addCat()
     {
+        print("cat = "+cat);
+        print("level = " + level);
         cat += 1;
         level = cat / 5;
 

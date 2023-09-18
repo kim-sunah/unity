@@ -18,6 +18,6 @@ public class retryBtn : MonoBehaviour
     }
     public void ReGame()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("MainScenes");
     }
 }
